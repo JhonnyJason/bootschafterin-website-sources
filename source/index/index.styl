@@ -1,0 +1,34 @@
+/*==========================================================
+RESET
+==========================================================*/
+@import '../stylereset/reset.styl'
+
+/*=========================================================
+Global Styles
+=========================================================*/
+@import '../globalstyle/global.styl'
+
+/*==========================================================
+Specific Variable Definitions
+==========================================================*/
+header-color = green
+footer-background = black
+
+/*==========================================================
+All Module Styles
+==========================================================*/
+@import '../allmodules/allstyles.styl'
+
+/*==========================================================
+Specific Style Overwrites
+==========================================================*/    
+#banner-image-row
+    background-image: url("/img/home.jpg")
+
+/*==========================================================
+Component Styles
+==========================================================*/
+@import 'components/welcome/styles.styl'
+@import 'components/company/styles.styl'
+@import 'components/services/styles.styl'
+@import 'components/partner/styles.styl'

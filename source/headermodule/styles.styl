@@ -1,0 +1,67 @@
+// header styles
+logo-size = 180px
+logo-top-spacing = 20px
+logo-to-menu-gap = 10px
+menu-to-banner-gap = 20px
+
+page-quote-row-padding-top = 30px
+page-quote-row-padding-bottom = 20px
+page-quote-to-signature-gap = 20px
+burger-size = 30px
+
+minimal-menu-width = 750px
+
+#header
+    background-color white
+
+#menu
+    display: flex
+    justify-content: space-between
+    margin-bottom menu-to-banner-gap
+    #burger
+        display: none
+        background-image: url(/img/burger-icon.svg)
+        width: burger-size
+        height: burger-size
+
+    .menu-link
+        text-transform: uppercase
+        font-size: 14pt
+        color cd-hellgrau
+
+// #banner-image-row
+//     height 320px
+//     width 100%
+//     background-color black
+//     background-position center
+//     background-size cover
+
+// #page-quote-row
+//         padding 0
+//         background-color header-color
+//         width 100%
+//         padding-top page-quote-row-padding-top
+//         padding-bottom page-quote-row-padding-bottom
+        
+//         h1.page-quote
+//             color white
+//             text-align: center
+//             margin-bottom page-quote-to-signature-gap
+//         .page-quote-signature
+//             color white
+//             text-align center
+//             width 100%
+
+@media screen and (max-width: minimal-menu-width)
+    #menu
+        flex-direction: column
+        .menu-link
+            padding: 10px
+            text-align: center
+    #menu.collapsed
+        .menu-link
+            display: none
+        #burger
+            display inline-block
+            text-align center
+            margin auto
