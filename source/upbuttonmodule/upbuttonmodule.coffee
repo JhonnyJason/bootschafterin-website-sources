@@ -20,7 +20,7 @@ upbuttonmodule.initialize = () ->
     log "upbuttonmodule.initialize"
     utl = allModules.vanillautilmodule
     upbutton = document.getElementById("up-button")
-    upbutton.addEventListener("click", upbuttonClicked)
+    if upbutton then upbutton.addEventListener("click", upbuttonClicked)
     return
     
 #region internalFunctions
