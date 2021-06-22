@@ -2,22 +2,18 @@
 logo-size = 180px
 logo-top-spacing = 20px
 logo-to-menu-gap = 10px
-menu-to-banner-gap = 20px
 
-page-quote-row-padding-top = 30px
-page-quote-row-padding-bottom = 20px
-page-quote-to-signature-gap = 20px
 burger-size = 30px
 
 minimal-menu-width = 750px
 
 #header
-    background-color white
+    background-color black
 
 #menu
+    height 150px
     display: flex
     justify-content: space-between
-    margin-bottom menu-to-banner-gap
     #burger
         display: none
         background-image: url(/img/burger-icon.svg)
@@ -29,28 +25,6 @@ minimal-menu-width = 750px
         font-size: 14pt
         color cd-hellgrau
 
-// #banner-image-row
-//     height 320px
-//     width 100%
-//     background-color black
-//     background-position center
-//     background-size cover
-
-// #page-quote-row
-//         padding 0
-//         background-color header-color
-//         width 100%
-//         padding-top page-quote-row-padding-top
-//         padding-bottom page-quote-row-padding-bottom
-        
-//         h1.page-quote
-//             color white
-//             text-align: center
-//             margin-bottom page-quote-to-signature-gap
-//         .page-quote-signature
-//             color white
-//             text-align center
-//             width 100%
 
 @media screen and (max-width: minimal-menu-width)
     #menu

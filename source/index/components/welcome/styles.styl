@@ -9,8 +9,27 @@ welcome-bottom-padding = 200px
 /*=====================================================
 The Serious Stuff
 =====================================================*/
+#banner-image-row
+    height 420px
+    width 100%
+    background-color black
+    background-position center
+    background-size cover
+    background-image: url("/img/hero-image.jpg")
+
 #welcome-section
     margin-top welcome-section-spacings
     margin-bottom welcome-section-spacings
     padding-bottom: welcome-bottom-padding
     text-align: center
+    // h1
+    //     color #3c3717
+    h2
+        color #78903a
+        margin-bottom 30px
+    p
+        margin-bottom 20px
+
+@media screen and (min-width: 600px)
+    #welcome-section
+        text-align left

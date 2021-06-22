@@ -1,10 +1,10 @@
 doctype html
-html
+html(lang="de")
     head
         meta(charset='utf-8')
 
         title Bootschafterin
-        meta(name='description', content='Sample Description in the Sample Page Head')
+        meta(name='description', content='Persönliche der Bootschafterin')
 
         link(rel='manifest' href='manifest.json')
         //- Icon Stuff
@@ -15,8 +15,9 @@ html
         meta(name="msapplication-TileColor", content="#da532c")
         meta(name="theme-color", content="#ffffff")
 
-        meta(name='viewport', content='width=device-width, initial-scale=1.0')
-        
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')    
         include styles-include.pug
+    body
+        include ../../source/index/indexbody.pug
         include scripts-include.pug
-    include ../../source/index/indexbody.pug
+    
