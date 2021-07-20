@@ -8,12 +8,8 @@ pushd testing/document-root
 ln -sf ../../sources/ressources/fonts fonts
 ln -sf ../../sources/ressources/img img
 
-ln -sf ../../sources/ressources/Datenschutzerklärung-HerzmitSeele.pdf .
-ln -sf ../../sources/ressources/AAB-HerzmitSeele.pdf .
-ln -sf ../../sources/ressources/Widerrufsbelehrung-HerzmitSeele.pdf .
-
-ln -sf ../../sources/ressources/manifests/* .
-ln -sf ../../sources/ressources/favicons/* .
+ln -sf ../../sources/ressources/manifest/* .
+ln -sf ../../sources/ressources/favicon/* .
 
 popd
 

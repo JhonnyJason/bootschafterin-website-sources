@@ -8,12 +8,32 @@ burger-size = 30px
 minimal-menu-width = 750px
 
 #header
-    background-color black
+    padding 8px
+    border-radius 50px
+    overflow hidden
+    border solid 1px
+    position fixed
+    background-color alpha(white, 0.95)
+    width 100%
+    box-sizing: border-box
+    display flex
+
+#logo-frame 
+    width 81px
+    height: 81px
+    cursor: pointer
+    svg
+        width 80px
+        height: 80px
+
+// #menu-row
+    
 
 #menu
-    height 150px
     display: flex
-    justify-content: space-between
+    justify-content: space-around
+    align-items: center
+    width 100%
     #burger
         display: none
         background-image: url(/img/burger-icon.svg)
