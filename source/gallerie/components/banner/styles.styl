@@ -10,26 +10,22 @@ welcome-bottom-padding = 200px
 The Serious Stuff
 =====================================================*/
 #banner-image-row
+    position relative
     height 620px
     width 100%
     background-color cd-dark-mono
     background-position center
     background-size cover
-    background-image: url("/img/hero-image.jpg")
+    // background-image: url("/img/sammelsurium-hero1.jpg")
+    background-image: url("/img/sammelsurium-hero2.jpg")
+    // background-image: url("/img/sammelsurium-hero3.jpg")
+    // background-image: url("/img/sammelsurium-hero4.jpg")
 
-#welcome-section
-    margin-top welcome-section-spacings
-    margin-bottom welcome-section-spacings
-    padding-bottom: welcome-bottom-padding
-    text-align: center
-    // h1
-    //     color cd-dark
-    h2
-        color cd-green
-        margin-bottom 30px
-    p
-        margin-bottom 20px
-
-@media screen and (min-width: 600px)
-    #welcome-section
-        text-align left
+#sammelsurium-text
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    svg
+        width 400px
+        height 200px

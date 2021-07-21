@@ -9,22 +9,22 @@ minimal-menu-width = 750px
 
 #header
     padding 8px
-    border-radius 50px
-    overflow hidden
-    border solid 1px
-    position fixed
-    background-color alpha(white, 0.95)
-    width 100%
-    box-sizing: border-box
-    display flex
-
-#logo-frame 
-    width 81px
-    height: 81px
-    cursor: pointer
+    background cd-dark-mono
+    color cd-green
     svg
-        width 80px
-        height: 80px
+        width 70px
+        height: 70px
+        stroke-width 15px
+
+#home-link-block
+    display flex
+    svg
+        display none
+
+#gallerie-link-block
+    display flex
+    svg
+        display none
 
 // #menu-row
     
@@ -33,7 +33,6 @@ minimal-menu-width = 750px
     display: flex
     justify-content: space-around
     align-items: center
-    width 100%
     #burger
         display: none
         background-image: url(/img/burger-icon.svg)
@@ -43,7 +42,7 @@ minimal-menu-width = 750px
     .menu-link
         text-transform: uppercase
         font-size: 14pt
-        color cd-hellgrau
+        font-weight bold
 
 
 @media screen and (max-width: minimal-menu-width)

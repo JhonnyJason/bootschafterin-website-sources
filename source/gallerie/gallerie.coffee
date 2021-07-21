@@ -4,7 +4,7 @@ global.allModules = Modules
 
 
 window.onload = ->
-    promises = (m.initialize() for n,m of Modules when m.initialize?) 
+    promises = (m.initialize() for n,m of Modules when m.initialize?)
     await Promise.all(promises)
     appStartup()
 

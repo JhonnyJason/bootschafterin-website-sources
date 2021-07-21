@@ -1,9 +1,14 @@
 //- header structure
 #header
-    #logo-frame: svg: use(href="#svg-boot-icon")
     //- #menu-row
-    #menu
+    #menu.max-content
+        #home-link-block
+            svg: use(href="#svg-boot-icon")
+            a#home-link.menu-link(href="/") Hafen
+        #gallerie-link-block 
+            svg: use(href="#svg-boot-icon")
+            a#gallerie-link.menu-link(href="/gallerie.html")  Gallerie
+        
         //- #bootschafterin-link.menu-link: a(href="/") Bootschafterin 
-        #sammelsurium-link.menu-link: a(href="/sammelsurium.html") SammelSurium
         //- #events-link.menu-link: a(href="/events.html") Events
-        #burger
+        //- #burger
